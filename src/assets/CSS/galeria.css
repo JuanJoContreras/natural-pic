@@ -7,6 +7,9 @@
   
   .grid-columns-5 {
     grid-template-columns: repeat(5, 1fr);
+    border-radius: 10px;
+    width: 100%;
+
   }
   .grid-columns-4 {
     grid-template-columns: repeat(4, 1fr);
@@ -55,4 +58,17 @@
     /*filter: grayscale(10);*/
     transform: scale(1);
     transition: 0.5s all;
+  }
+
+  .foto{
+    border-radius: 20px;
+    width: 100%;
+    align-items: center;
+    margin: 5%;
+    padding: 10%;
+    
+    
+    
+
+
   }
