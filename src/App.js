@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -8,6 +9,7 @@ import Navbar from "./components/Navbar";
 
 import Home from "./views/Home";
 import Favoritos from "./views/Favoritos";
+import NotFound from "./views/NotFound";
 
 export default function App() {
   const [fotos, setFotos] = useState([]);
@@ -39,6 +41,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/favoritos" element={<Favoritos />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
       </Context.Provider>
